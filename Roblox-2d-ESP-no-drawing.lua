@@ -25,7 +25,7 @@
 	--__
 
 	--// misc
-		local gethui = gethui or function() return CoreGui end;
+		local gethui = gethui or function() return cloneref(service'CoreGui'); end;
 	--__
 --__
 
