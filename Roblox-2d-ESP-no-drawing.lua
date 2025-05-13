@@ -46,14 +46,14 @@
 
 --// playeresp code
 	local insert = table.insert
-	local find_first_child = Workspace.FindFirstChild
-	local is_a = Workspace.IsA
+	local find_first_child = cloneref(service'Workspace').FindFirstChild
+	local is_a = cloneref(service'Workspace').IsA
 	local players = cloneref(service'Players');
 	local run_service = cloneref(service'RunService');
 	local core_gui = cloneref(service'CoreGui');
 	local teams = cloneref(service'Teams');
 	local local_player = players.LocalPlayer
-	local camera = Workspace.CurrentCamera
+	local camera = cloneref(service'Workspace').CurrentCamera
 	local viewport_size = camera.ViewportSize
 
 	function get_team_color(player)
